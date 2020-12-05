@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - 404</title>
+    <title>Casos de Uso</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-book-open"></i>
                     <span>Descripción del Proyecto</span></a>
@@ -85,20 +85,31 @@
                     <i class="fas fa-briefcase"></i>
                     <span>Reglas del Negocio</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Casos de Uso</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
                         <a class="collapse-item" href="404.html">Diagramas CU</a>
                         <a class="collapse-item" href="404.html">Modelo de Datos</a>
                         <h6 class="collapse-header">Especificaciones:</h6>
-                        <a class="collapse-item" href="404.html">Modificar Canciones</a>
-                        <a class="collapse-item" href="404.html">Aceptar Cambios</a>
+                        <a class="collapse-item active" href="CU1.html">Consultar Canciones</a>
+                        <a class="collapse-item" href="CU2.html">Consultar Banda o Artista</a>
+                         <a class="collapse-item" href="CU3.html">Consultar Album</a>
+                         <a class="collapse-item" href="CU4.html">Subir Álbum</a>
+                         <a class="collapse-item" href="CU5.html">Subir Canción</a>
+                         <a class="collapse-item" href="CU6.html">Subir Banda o Artista</a>
+                         <a class="collapse-item" href="CU7.html">Inicio de Sesión</a>
+                         <a class="collapse-item" href="CU8.html"> Aceptar Cambios</a>
+                         <a class="collapse-item" href="CU9.html">CU9 </a>
+                         <a class="collapse-item" href="CU10.html">Eliminar Canciones</a>
+                         <a class="collapse-item" href="CU11.html">Modificar Canciones</a>
+                         <a class="collapse-item" href="CU12.html">Modificar Bandas</a>
+                         <a class="collapse-item" href="CU13.html">Modificar Álbum</a>
                     </div>
                 </div>
             </li>
@@ -126,26 +137,46 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h1 class="h3 mb-2 text-gray-800">Upss!!</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Casos de Uso</h1>
 
                 </nav>
                 <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- 404 Error Text -->
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                        <p class="text-gray-500 mb-0">Seguimos trabajando en esta página!</p>
-                        <a href="index.html">&larr; Volver al index</a>
+                    <div class="container-fluid text-gray-900">
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">CU01 Consultar Canciones</h6>
+                                </div>
+                                <div class="card-body">
+                                    
+                                    <p><b>Identificador del CU:</b> CU01 </p>
+                                    <p><b>Nombre:</b> Consultar canciones. </p>
+                                    <p><b>Descripción:</b> Se muestran todas las canciones almacenadas en el sistema. </p>
+                                    <p><b>Actores:</b> Conductor de radio. </p>
+                                    <p><b>Precondición:</b> Escribir la URL en el navegador web. </p>
+                                    <p><b>Postcondición:</b> El conductor de radio podrá acceder a la información del sistema y hacer uso de este. </p>
+                                    <p><b>Entradas:</b> Nombre de la canción. </p>
+                                    <p><b>Salidas:</b> Regresa la o las canciones consultadas. </p>
+                                    <p><b>Trayectoria principal: </b></p>
+                                    <ol>
+                                        <li>El conductor de radio ingresa a la página web. </li>
+                                        <li>El sistema desplegará las canciones con un orden determinado. </li>
+                                        <li>El conductor de radio podrá consultar las canciones que desee ingresando el nombre de la canción en el cuadro de búsqueda. </li>
+                                        <li>El conductor escribe mal el nombre de la canción. [Trayectoria Alt. A] </li>
+                                        <li>El sistema muestra el resultado de la búsqueda. </li>
+                                        <li>Termina el caso de uso. </li>
+                                    </ol>
+                                    <p><b>Trayectoria Alternativa A: </b><p>                                    
+                                        <ol>
+                                           <div class="francesa">A.4 El sistema informa que no encontró ningún resultado. </div>
+                                           <div class="francesa">A.5 El sistema sugiere revisar que este bien escrito el nombre de la canción. </div>
+                                           <div class="francesa">A.6 El caso de uso continua en el paso 5 de la trayectoria principal. </div>
+                                        </ol>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
+       
             <!-- End of Main Content -->
 
             <!-- Footer -->
@@ -169,25 +200,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -198,6 +210,9 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
 </body>
 
