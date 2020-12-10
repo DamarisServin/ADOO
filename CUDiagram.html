@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Casos de Uso</title>
+    <title>Diagramade Casos de Uso</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
@@ -91,12 +85,12 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
-                        <a class="collapse-item" href="CUDiagram.html">Diagramas CU</a>
+                        <a class="collapse-item active" href="CUDiagram.html">Diagramas CU</a>
                         <a class="collapse-item" href="modeloDatos.html">Modelo de Datos</a>
                         <h6 class="collapse-header">Especificaciones:</h6>
                         <a class="collapse-item" href="CU1.html">Consultar Canciones</a>
                         <a class="collapse-item" href="CU2.html">Consultar Banda o Artista</a>
-                        <a class="collapse-item active" href="CU3.html">Consultar Album</a>
+                        <a class="collapse-item" href="CU3.html">Consultar Album</a>
                         <a class="collapse-item" href="CU4.html">Subir Álbum</a>
                         <a class="collapse-item" href="CU5.html">Subir Canción</a>
                         <a class="collapse-item" href="CU6.html">Subir Banda o Artista</a>
@@ -128,57 +122,45 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
         </ul>
-        <div id="content-wrapper" class="d-flex flex-column">
+        <!-- End of Sidebar -->
 
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
             <!-- Main Content -->
             <div id="content">
-
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h1 class="h3 mb-2 text-gray-800">Casos de Uso</h1>
-
+                    <h1 class="h3 mb-2 text-gray-800">Diagrama de Casos de Uso</h1>
                 </nav>
                 <!-- End of Topbar -->
-                    <div class="container-fluid text-gray-900">
+                <!-- Begin Page Content -->
+                <div class="container-fluid text-gray-900">
+                    <!-- Content Row -->
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- Perspectiva del producto  -->
                         <div class="col">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">CU03 Consutar Álbum </h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Diagrama de Casos de Uso </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p><b>Identificador del CU:</b> CU03. </p>
-                                    <p><b>Nombre:</b> Consultar álbum </p>
-                                    <p><b>Descripción:</b> Se muestran todos los álbumes de las bandas o artistas almacenados en el sistema. </p>
-                                    <p><b>Actores:</b> Conductor de radio. </p>
-                                    <p><b>Precondición:</b> Haber elegido el apartado de álbumes. </p>
-                                    <p><b>Postcondición:</b> El conductor será capaz de observar los álbumes que están almacenados en la página web. </p>
-                                    <p><b>Entradas:</b> Nombre de la banda o artista. </p>
-                                    <p><b>Salidas:</b> Devuelve los álbumes de las bandas o artistas. </p>
-                                    <p><b>Trayectoria principal:</b>  </p>
-                                    <ol>
-                                        <li>El sistema desplegará los álbumes de las bandas o artistas en un orden determinado. </li>
-                                        <li>El conductor de radio podrá consultar los álbumes de las bandas o artistas ingresando el nombre del álbum en el cuadro de búsqueda. </li>
-                                        <li>El conductor escribe mal el nombre del álbum [Trayectoria Alt. A] </li>
-                                        <li>El sistema muestra el resultado de la búsqueda. </li>
-                                        <li>Termina el caso de uso. </li>
-                                    </ol>
-                                    <p><b>Trayectoria Alternativa A: </b></p>
-                                        <ol>
-                                           <div class="francesa">A.3 El sistema informa que no encontró ningún resultado. </div>
-                                           <div class="francesa">A.4 El sistema sugiere revisar que este bien escrito el nombre del álbum. </div>
-                                           <div class="francesa">A.5 El caso de uso continua en el paso 4 de la trayectoria principal. </div>
-                                        </ol>
+                                     <div class="text-center"><img  class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="img/EstacionDeRadio.png"></div>
+                                     <br/>
+                                     <div class="text-center"><img  class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="img/ConductorDeRadio.png"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-       
+                    <!-- Content Row -->
+            
             <!-- End of Main Content -->
 
-            <!-- Footer -->
+                    <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -189,16 +171,13 @@
             <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
-
     </div>
-    <!-- End of Page Wrapper -->
+            <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -209,9 +188,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-
 </body>
 
 </html>

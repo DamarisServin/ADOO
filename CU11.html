@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Requerimientos</title>
+    <title>Casos de Uso</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +20,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/other-styles.css" rel="stylesheet">
 
 </head>
 
@@ -72,7 +72,7 @@
             </div>
 
             <!-- Nav Item - Requerimientos -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="requerimientos.html">
                     <i class="fas fa-clipboard-list"></i>
                     <span>Requerimientos</span></a>
@@ -83,13 +83,13 @@
                     <span>Reglas del Negocio</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Casos de Uso</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
                         <a class="collapse-item" href="CUDiagram.html">Diagramas CU</a>
@@ -106,7 +106,7 @@
                         <a class="collapse-item" href="CU9.html">Eliminar Bandas o Artista</a>
                         <a class="collapse-item" href="CU9.html">Eliminar Álbum</a>
                         <a class="collapse-item" href="CU10.html">Eliminar Canciones</a>
-                        <a class="collapse-item" href="CU11.html">Modificar Canciones</a>
+                        <a class="collapse-item active" href="CU11.html">Modificar Canciones</a>
                         <a class="collapse-item" href="CU12.html">Modificar Bandas</a>
                         <a class="collapse-item" href="CU13.html">Modificar Álbum</a>
                     </div>
@@ -142,81 +142,42 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h1 class="h3 mb-2 text-gray-800">Requerimientos</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Casos de Uso</h1>
 
                 </nav>
                 <!-- End of Topbar -->
-                <div class="container-fluid text-gray-900">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Requerimietos Funcionales</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p class="francesa">RN1. El sistema deberá guardar la información de cada banda o artista, es decir: nombre, género, ciudad de nacimiento, biografía y su sitio web. Si alguno de estos datos no es conocido, el dato se sustituirá por las siglas NA (No Disponible, por sus siglas en ingles).
-                                    </p>
-                                    <p class="francesa">RN2. El sistema organizará la información de los álbumes del artista o banda en el siguiente orden: nombre del álbum, año de lanzamiento, numero de pistas y estudio de grabación.
-                                    </p>
-                                    <p class="francesa">RN3. Se almacenará nombre, dirección, sitio web oficial y número telefónico de la compañía de grabación que produjo cada álbum del sistema. Si alguno de estos datos no es conocido, el dato se sustituirá por las siglas NA (No Disponible, por sus siglas en ingles).
-                                    </p>
-                                    <p class="francesa">RN4. De cada álbum se quiere almacenar y mostrar su imagen de portada y contraportada. 
-                                    </p>
-                                    <p class="francesa">RN5. El sistema mostrará si una banda o artista está influenciada por otras bandas o artistas. De estos se mostrará su nombre, ciudad de nacimiento y, en caso de ser un artista, su instrumento. 
-                                    </p>
-                                    <p class="francesa">RN6. En la pantalla de “Acerca del Artista”, el sistema desplegará las bandas a las que el artista ha pertenecido. Si el artista no ha pertenecido a ninguna banda este apartado se omitirá. 
-                                    </p>
-                                    <p class="francesa">RN7. El sistema debe mostrar si un músico es un artista invitado en alguna canción o álbum.
-                                    </p>
-                                    <p class="francesa">RN8. Si es el caso, se quiere tener una tablatura por canción que contenga fecha, URL (Localizador de Recursos Uniforme, por sus siglas en inglés), el traductor y el correo del traductor. 
-                                    </p>
-                                    <p class="francesa">RN9. Las búsquedas en el sistema le permitirán al usuario encontrar canciones y artistas o bandas basadas en el nombre de las mismas. Si no se encuentra alguna canción o artista se desplegará el mensaje “No se encontró ningún resultado” .
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Begin Page Content -->
                     <div class="container-fluid text-gray-900">
                         <div class="col">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Requerimientos No Funcionales</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">CU11 Modificar canciones </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p class="francesa">RNF1. El sistema permitirá el acceso a un máximo de 50 usuarios de forma concurrente.  
-                                    </p>
-                                    <p class="francesa">RNF2. El registro de los cambios hechos en la plataforma se realizará de manera inmediata en la base de datos. 
-                                    </p>
-                                    <p class="francesa">RNF3. Los permisos de acceso al sistema podrán ser cambiados solamente por el administrador del sistema.  
-                                    </p>
-                                    <p class="francesa">RNF4. La configuración de los parámetros de instalación no debe requerir modificaciones al código fuente de la instalación.  
-                                    </p>
-                                    <p class="francesa">RNF5. El nuevo sistema o componente de software puede ser modificado para corregir fallos, mejorar su funcionamiento u otros atributos o adaptarse a cambios en el entorno. 
-                                    </p>
-                                    <p class="francesa">RNF6. Los componentes base o herramientas utilizadas para el diseño, construcción, implementación y la realización de pruebas, deberán tener más de 3 años en el mercado, soporte por parte del fabricante, tener fabricante reconocido.  
-                                   </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+									<p><b>Identificador del CU:</b> CU11  </p>
 
-                    <div class="container-fluid text-gray-900">
-                        <div class="col">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Requerimientos de Sistema</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p class="francesa">RX1. El sistema web debe de ser compatible con todos los navegadores web Google Chrome, Opera, Microsoft Edge, Safari y Mozillla Firefox.
-                                    </p>
-                                    <p class="francesa">RX2. El sistema web deberá ser adaptable a cualquier tipo de dispositivo en el cual se pueda acceder a los navegadores antes mencionados (smartphones, computadoras y tabletas). 
-                                    </p>
-                                    <p class="francesa">RX3. El sistema web debe mostrar los resultados usando la codificación de caracteres 8-bit Unicode Transformation Format (UTF-8). 
-                                    </p>
-                                    <p class="francesa">RX4. El sistema web deberá tener un tiempo de carga mínimo de 2 segundos. 
-                                    </p>
-                                    <p class="francesa">RX5. El sistema web debe almacenar un máximo de 300 artistas/bandas. 
-                                    </p>
+									<p><b>Nombre:</b> Modificar canciones.  </p>
+
+									<p><b>Descripción: </b>Permite modificar el nombre de una canción si este está mal escrito. </p>
+
+									<p><b>Actores: </b> Estación de radio.  </p>
+
+									<p><b>Precondición:</b> El conductor de radio sube información a algún álbum sobre una canción con el nombre mal escrito.  </p>
+
+									<p><b>Postcondición:</b> La estación de radio podrá editar la información de la canción con el nombre mal escrito. </p>
+
+									<p><b>Entradas:</b> Nombre del álbum de la banda o artista.  </p>
+
+									<p><b>Salidas:</b> Devuelve el álbum con el nombre de la canción modificada. </p>
+
+									<p><b>Trayectoria principal:  </b> </p>
+									<ol>
+										<li>La estación de radio inicia sesión a través del CU07.  </li>
+										<li>La estación de radio revisa los álbumes a los que el Conductor de Radio agrego canciones recientemente y encuentra una(s) canción(es) con el nombre mal escrito. </li>
+										<li>La estación de radio realiza la modificación en el nombre de dicha(s) canción(es). </li>
+										<li>El caso de uso termina. </li>
+
+									</ol>
+
                                 </div>
                             </div>
                         </div>
@@ -245,6 +206,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -254,6 +216,10 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
 </body>
 
 </html>
