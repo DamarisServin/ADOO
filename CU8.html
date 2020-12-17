@@ -95,23 +95,23 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
-                        <a class="collapse-item" href="404.html">Diagramas CU</a>
-                        <a class="collapse-item" href="404.html">Modelo de Datos</a>
+                        <a class="collapse-item" href="CUDiagram.html">Diagramas CU</a>
+                        <a class="collapse-item" href="modeloDatos.html">Modelo de Datos</a>
                         <h6 class="collapse-header">Especificaciones:</h6>
                         <a class="collapse-item" href="CU1.html">Consultar Canciones</a>
                         <a class="collapse-item" href="CU2.html">Consultar Banda o Artista</a>
-                         <a class="collapse-item" href="CU3.html">Consultar Album</a>
-                         <a class="collapse-item" href="CU4.html">Subir Álbum</a>
-                         <a class="collapse-item" href="CU5.html">Subir Canción</a>
-                         <a class="collapse-item" href="CU6.html">Subir Banda o Artista</a>
-                         <a class="collapse-item active" href="CU7.html">Inicio de Sesión</a>
-                         <a class="collapse-item" href="CU8.html">Aceptar Cambios</a>
-                        <a class="collapse-item" href="CU9.html">Eliminar Bandas o Artista</a>
+                        <a class="collapse-item" href="CU3.html">Consultar Album</a>
+                        <a class="collapse-item" href="CU4.html">Subir Álbum</a>
+                        <a class="collapse-item" href="CU5.html">Subir Canción</a>
+                        <a class="collapse-item" href="CU6.html">Subir Banda o Artista</a>
+                        <a class="collapse-item" href="CU7.html">Inicio de Sesión</a>
+                        <a class="collapse-item" href="CU8.html">Eliminar Bandas o Artista</a>
                         <a class="collapse-item" href="CU9.html">Eliminar Álbum</a>
                         <a class="collapse-item" href="CU10.html">Eliminar Canciones</a>
                         <a class="collapse-item" href="CU11.html">Modificar Canciones</a>
                         <a class="collapse-item" href="CU12.html">Modificar Bandas</a>
                         <a class="collapse-item" href="CU13.html">Modificar Álbum</a>
+                        <a class="collapse-item" href="CU14.html">Aceptar Cambios</a>
                     </div>
                 </div>
             </li>
@@ -129,6 +129,11 @@
                 <a class="nav-link" href="crc.html">
                     <i class="fas fa-address-card"></i>
                     <span>Targetas CRC</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="paquetes.html">
+                    <i class="fas fa-folder"></i>
+                    <span>Diagrama de PaquetesC</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -165,30 +170,22 @@
                                     <h6 class="m-0 font-weight-bold text-primary">CU08 Aceptar Cambios </h6>
                                 </div>
                                 <div class="card-body">
-                                    <p><b>Identificador del CU:</b> CU08 </p>
-                                    <p><b>Nombre:</b> Aceptar Cambios. </p>
-                                    <p><b>Descripción:</b> La estacion de radio aprueba los cambios que serán hechos en la base de datos. </p>
-                                    <p><b>Actores:</b> Estacion de Radio </p>
-                                    <p><b>Precondición:</b> </p>
-                                    <p>El representante de la estación de radio es escogido de acuerdo a BR2. Elección del representante. </p>
-                                    <p>Se realizó previamente el inicio de sesión </p>
-                                    <p><b>Postcondición:</b>El sistema realizará los cambios aceptados en la base de datos.</p>
-                                    <p><b>Entradas:</b>Los cambios hechos por los conductores de radio que todavía no han sido aprobados en el sistema</p>
-                                    <p><b>Salidas:</b>El alta de los cambios en la base de datos</p>
-                                    <p><b>Trayectoria principal: </b></p>
-                                    <ol>
-                                        <li>La estación de radio elige un cambio que se requiera aprobar.</li>
-                                        <li>El sistema despliega la UI.9 Detalles del Cambio </li>
-                                        <li>La estación de radio revisa los cambio hechos por los conductores y presiona el botón "Aceptar Cambio"  [Trayectoria Alt. A]</li>
-                                        <li>El sistema realiza los cambios para que los conductores de radio puedan visualizarlos</li>
-                                        <li>Termina el caso de uso. </li>
-                                    </ol>
-                                    <p><b>Trayectoria Alternativa A: </b><p>                                    
-                                        <ol>
-                                           <div class="francesa">A.3 La estación de radio revisa los cambios y presiona el botón "Eliminar Cambio" </div>
-                                           <div class="francesa">A.4 El cambio es descartado de la base de datos, y eliminado de la lista de la UI. 9 Detalles del Cambio </div>
+                                    <p></b>Identificador del CU: </b>CU08. Eliminar Banda o Artista  </p>
+                                    <p></b>Nombre:</b> Eliminar banda o artista.  </p>
+                                    <p></b>Descripción: </b>Se eliminan las bandas o artistas seleccionadas del sistema.  </p>
+                                    <p></b>Actores: </b> Estación de radio, gestor de base de datos.  </p>
+                                    <p></b>Precondición:</b> El conductor de radio sube información repetida, perteneciente a otro álbum o es información incorrecta.   </p>
 
-                                        </ol>
+                                    <p></b>Postcondición: </b>La estación de radio podrá eliminar la información de la banda o artista de forma incorrecta. </p>
+                                    <p></b>Entradas:</b> Nombre de la banda o artista.  </p>
+                                    <p></b>Salidas:</b> Devuelve el álbum sin el artista o banda eliminado.  </p>
+                                    <p></b>Trayectoria principal: </b>  </p>
+                                    <ol>
+                                        <li>La estación de radio inicia sesión a través del CU07.  </li>
+                                        <li>La estación de radio revisa los álbumes a los que el Conductor de Radio agregó bandas o artistas recientemente y encuentra algún error dentro de esa información </li>
+                                        <li>La estación de radio selecciona dicha información y la elimina del sistema. </li>
+                                        <li>El caso de uso termina. </li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>

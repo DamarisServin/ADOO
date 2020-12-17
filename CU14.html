@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>StakeHolders</title>
+    <title>Casos de Uso</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,6 +30,7 @@
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
@@ -36,34 +38,37 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">SI Rock</div>
             </a>
+
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
+
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-book-open"></i>
-                    <span>Descripción del Proyecto</span>
-                </a>
+                    <span>Descripción del Proyecto</span></a>
             </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
+
             <!-- Heading -->
             <div class="sidebar-heading">
                 Iteracion 0
             </div>
+
             <!-- Nav Item - StakeHolder -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="stakeholders.html">
                     <i class="fas fa-users"></i>
-                    <span>StakeHolders</span>
-                </a>
+                    <span>StakeHolders</span></a>
             </li>
+
             <!-- Nav Item - Modelo de Procesos -->
             <li class="nav-item">
                 <a class="nav-link" href="modelop.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Modelo de Procesos</span>
-                </a>
+                    <span>Modelo de Procesos</span></a>
             </li>
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -79,16 +84,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="reglasNegocio.html">
                     <i class="fas fa-briefcase"></i>
-                    <span>Reglas del Negocio</span>
-                </a>
+                    <span>Reglas del Negocio</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Casos de Uso</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
                         <a class="collapse-item" href="CUDiagram.html">Diagramas CU</a>
@@ -107,7 +111,7 @@
                         <a class="collapse-item" href="CU11.html">Modificar Canciones</a>
                         <a class="collapse-item" href="CU12.html">Modificar Bandas</a>
                         <a class="collapse-item" href="CU13.html">Modificar Álbum</a>
-                        <a class="collapse-item" href="CU14.html">Aceptar Cambios</a>
+                        <a class="collapse-item active" href="CU14.html">Aceptar Cambios</a>
                     </div>
                 </div>
             </li>
@@ -133,10 +137,14 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
+
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -151,91 +159,48 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h1 class="h3 mb-2 text-gray-800">StakeHolders</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Casos de Uso</h1>
 
                 </nav>
                 <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <p class="mb-4">A continuación se presenta de decripcion de los StakeHolders.</p>
-
-                    <!-- Content Row -->
-                    <div class="row text-gray-900">
-
-                        <div class="col-xl-6 col-lg-7">
-
+                    <div class="container-fluid text-gray-900">
+                        <div class="col">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Estación de radio</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">CU14 Aceptar Cambios </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="text-center">
-                                        <div class="fas fa-user-tie fa-6x">
-                                        </div>   
-                                    </div>
-                                    <hr>
-                                    Es la empresa que contrata el servicio. 
-                                    <hr>
-                                    <p><b>Responsabilidades:</b> Proporcionar requerimientos funcionales al sistema. Es la parte que paga a los desarrolladores por su trabajo. </p>                                    
-                                    <p><b>Participación:</b> Inspector de requisitos y de hitos del software. </p>
-                                    <p><b>Entregables:</b> El proyecto funcionando y su respectiva documentación. </p>
-                                    <p><b>Tipo de usuario:</b> Principal. </p>
-                                </div>
-                            </div>
+                                    <p><b>Identificador del CU:</b> CU14 </p>
+                                    <p><b>Nombre:</b> Aceptar Cambios. </p>
+                                    <p><b>Descripción:</b> La estacion de radio aprueba los cambios que serán hechos en la base de datos. </p>
+                                    <p><b>Actores:</b> Estacion de Radio </p>
+                                    <p><b>Precondición:</b> </p>
+                                    <p>El representante de la estación de radio es escogido de acuerdo a BR2. Elección del representante. </p>
+                                    <p>Se realizó previamente el inicio de sesión </p>
+                                    <p><b>Postcondición:</b>El sistema realizará los cambios aceptados en la base de datos.</p>
+                                    <p><b>Entradas:</b>Los cambios hechos por los conductores de radio que todavía no han sido aprobados en el sistema</p>
+                                    <p><b>Salidas:</b>El alta de los cambios en la base de datos</p>
+                                    <p><b>Trayectoria principal: </b></p>
+                                    <ol>
+                                        <li>La estación de radio elige un cambio que se requiera aprobar.</li>
+                                        <li>El sistema despliega la UI.9 Detalles del Cambio </li>
+                                        <li>La estación de radio revisa los cambio hechos por los conductores y presiona el botón "Aceptar Cambio"  [Trayectoria Alt. A]</li>
+                                        <li>El sistema realiza los cambios para que los conductores de radio puedan visualizarlos</li>
+                                        <li>Termina el caso de uso. </li>
+                                    </ol>
+                                    <p><b>Trayectoria Alternativa A: </b><p>                                    
+                                        <ol>
+                                           <div class="francesa">A.3 La estación de radio revisa los cambios y presiona el botón "Eliminar Cambio" </div>
+                                           <div class="francesa">A.4 El cambio es descartado de la base de datos, y eliminado de la lista de la UI. 9 Detalles del Cambio </div>
 
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Conductores de la estación</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <div class="fas fa-microphone-alt fa-6x">
-                                        </div>   
-                                    </div>
-                                    <hr>
-                                    Es el usuario a quien va dirigida la aplicación web, es quien va a utilizarla regularmente. 
-                                    <hr>
-                                    <p><b>Responsabilidades:</b>  Buscar y utilizar la información del sistema, reportar errores que pudiesen presentarse. Es la empresa que contrata el servicio. </p>   
-                                    <p><b>Participación:</b> Uso del software durante sus programas de radio </p>
-                                    <p><b>Tipo de usuario:</b> Usuario intermedio, tiene antecedentes usando aplicaciones web. </p>
-                                    <p><b>Entregables:</b> El proyecto funcionando. </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Equipo de Desarrollo</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <div class="fas fa-users fa-6x">
-                                        </div>   
-                                    </div>
-                                    <hr>
-                                    Son las personas encargadas de implementar el proyecto. 
-                                    <hr>
-                                    <p><b>Responsabilidades:</b> Seguir los requerimientos del proyecto, asegurarse de que el proyecto funcione antes de que llegue al usuario final. </p>
-                                    <p><b>Participación:</b> Corrigen errores o fallas al sistema, incrementan sus funcionalidades </p>
-                                    <p><b>Tipo de usuario:</b> Es el experto del sistema. </p>
-                                    <p class="text-right"><a href="equipo.html">Conócenos ...</a></p>
+                                        </ol>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <!-- /.container-fluid -->
-            </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
+        </div>
+                    <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -245,18 +210,13 @@
             </footer>
             <!-- End of Footer -->
 
-        </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -268,6 +228,7 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
 </body>
 
