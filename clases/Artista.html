@@ -2,76 +2,83 @@
 <html>
 <head>
 	<title>Artista.java</title>
+    <style type="text/css">
+        tab1 { padding-left: 3em; }
+        tab2 { padding-left: 5em; }
+    </style>
 </head>
 <body>
-package clases;
+package consulta;
 
-public class Artista {
-    private String nombre;
-    private String genero;
-    private String cdNacimiento;
-    private String biografia;
-    private boolean banda;
-    private String nombreBanda;
-    private String sitioWeb;
+<p>public class Artista {
+    <br>
+    <br><tab1>private String nombre;</tab1>
+    <br><tab1>private String genero;</tab1>
+    <br><tab1>private String cdNacimiento;</tab1>
+    <br><tab1>private String biografia;</tab1>
+    <br><tab1>private boolean banda;</tab1>
+    <br><tab1>private String nombreBanda;</tab1>
+    <br><tab1>private String sitioWeb;</tab1>
+    <br>
+    <br><tab1>public String getNombre() {</tab1>
+        <br><tab2>return nombre;</tab2>
+    <br><tab1>}</tab1>
 
-    public String getNombre() {
-        return nombre;
-    }
+    <br><tab1>public void setNombre(String nombre) {</tab1>
+       <br><tab2> this.nombre = nombre;</tab2>
+    <br><tab1>}</tab1>
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    <br><tab1>public String getGenero() {</tab1>
+        <br><tab2>return genero;</tab2>
+    <br><tab1>}</tab1>
 
-    public String getGenero() {
-        return genero;
-    }
+    <br><tab1>public void setGenero(String genero) {</tab1>
+        <br><tab2>this.genero = genero;</tab2>
+    <br><tab1>}</tab1>
 
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
+    <br><tab1>public String getCdNacimiento() {</tab1>
+        <br><tab2>return cdNacimiento;</tab2>
+    <br><tab1>}</tab1>
 
-    public String getCdNacimiento() {
-        return cdNacimiento;
-    }
+    <br><tab1> public void setCdNacimiento(String cdNacimiento) {</tab1>
+        <br><tab2> this.cdNacimiento = cdNacimiento;</tab2>
+    <br><tab1> }</tab1>
 
-    public void setCdNacimiento(String cdNacimiento) {
-        this.cdNacimiento = cdNacimiento;
-    }
+    <br><tab1> public String getBiografia() {</tab1>
+       <br><tab2>  return biografia;</tab2>
+    <br><tab1> }</tab1>
 
-    public String getBiografia() {
-        return biografia;
-    }
+    <br><tab1> public void setBiografia(String biografia) {</tab1>
+        <br><tab2> this.biografia = biografia;</tab2>
+    <br><tab1> }</tab1>
 
-    public void setBiografia(String biografia) {
-        this.biografia = biografia;
-    }
+    <br><tab1> public boolean isBanda() {</tab1>
+        <br><tab2> return banda;</tab2>
+    <br><tab1> }</tab1>
 
-    public boolean isBanda() {
-        return banda;
-    }
+    <br><tab1> public void setBanda(boolean banda) {</tab1>
+        <br><tab2> this.banda = banda;</tab2>
+    <br><tab1> }</tab1>
 
-    public void setBanda(boolean banda) {
-        this.banda = banda;
-    }
+    <br><tab1>public String getNombreBanda() {</tab1>
+        <br><tab2>return nombreBanda;</tab2>
+    <br><tab1>}</tab1>
 
-    public String getNombreBanda() {
-        return nombreBanda;
-    }
+    <br><tab1>public void setNombreBanda(String nombre) {</tab1>
+       <br><tab2> this.nombreBanda = nombre;</tab2>
+    <br><tab1>}</tab1>
 
-    public void setNombreBanda(String nombre) {
-        this.nombreBanda = nombre;
-    }
+    <br><tab1>public String getSitioWeb() {</tab1>
+        <br><tab2>return sitioWeb;</tab2>
+    <br><tab1>}</tab1>
 
-    public String getSitioWeb() {
-        return sitioWeb;
-    }
-
-    public void setSitioWeb(String sitioWeb) {
-        this.sitioWeb = sitioWeb;
-    }
-    
-}
+    <br><tab1>public void setSitioWeb(String sitioWeb) {</tab1>
+        <br><tab2>this.sitioWeb = sitioWeb;</tab2>
+    <br><tab1>}</tab1>
+    <br>
+    <br>
+   
+}</p>
 
 </body>
 </html>

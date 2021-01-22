@@ -2,31 +2,37 @@
 <html>
 <head>
 	<title>Cancion.java</title>
+    <style type="text/css">
+        tab1 { padding-left: 3em; }
+        tab2 { padding-left: 5em; }
+    </style>
 </head>
 <body>
-package clases;
+package consulta;
 
-public class Cancion {
-    private String nombre;
-    private double duracion;
+<p>public class Cancion {
+    <br>
+    <br><tab1>private String nombre;</tab1>
+    <br><tab1>private double duracion;</tab1>
+    <br>
+    <br><tab1>public String getNombre() {</tab1>
+        <br><tab1><tab1>return nombre;</tab1>
+    <br><tab1>}</tab1>
 
-    public String getNombre() {
-        return nombre;
-    }
+    <br><tab1>public void setNombre(String nombre) {</tab1>
+        <br><tab1><tab1>this.nombre = nombre;</tab1>
+    <br><tab1>}</tab1>
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    <br><tab1>public double getDuracion() {</tab1>
+        <br><tab1><tab1>return duracion;</tab1>
+    <br><tab1>}</tab1>
 
-    public double getDuracion() {
-        return duracion;
-    }
-
-    public void setDuracion(double duracion) {
-        this.duracion = duracion;
-    }
-    
-}
+    <br><tab1>public void setDuracion(double duracion) {</tab1>
+        <br><tab1><tab1>this.duracion = duracion;</tab1>
+    <br><tab1>}</tab1>
+    <br>
+    <br>
+}</p>
 
 </body>
 </html>
