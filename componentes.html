@@ -1,33 +1,26 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Casos de Uso</title>
+    <title>Diagrama de Despliegue</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
@@ -95,7 +88,7 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Casos de Uso</span>
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Diagramas:</h6>
                         <a class="collapse-item" href="CUDiagram.html">Diagramas CU</a>
@@ -111,7 +104,7 @@
                         <a class="collapse-item" href="CU8.html">Eliminar Artista</a>
                         <a class="collapse-item" href="CU9.html">Eliminar Álbum</a>
                         <a class="collapse-item" href="CU10.html">Eliminar Canciones</a>
-                        <a class="collapse-item active" href="CU11.html">Modificar Canciones</a>
+                        <a class="collapse-item" href="CU11.html">Modificar Canciones</a>
                         <a class="collapse-item" href="CU12.html">Modificar Artista</a>
                         <a class="collapse-item" href="CU13.html">Modificar Álbum</a>
                         <a class="collapse-item" href="CU14.html">Aceptar Cambios</a>
@@ -156,7 +149,7 @@
                     <i class="fas fa-exchange-alt"></i>
                     <span>Diagrama de Secuencia</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="componentes.html">
                     <i class="fas fa-cube"></i>
                     <span>Diagrama de Despligue</span></a>
@@ -191,59 +184,41 @@
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content">
-
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <h1 class="h3 mb-2 text-gray-800">Casos de Uso</h1>
-
+                    <h1 class="h3 mb-2 text-gray-800">Diagramas de Despliegue</h1>
                 </nav>
                 <!-- End of Topbar -->
-                    <div class="container-fluid text-gray-900">
+                <!-- Begin Page Content -->
+                <div class="container-fluid text-gray-900">
+                    <!-- Content Row -->
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- Perspectiva del producto  -->
                         <div class="col">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">CU11 Modificar canciones </h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Diagramas de Despliegue </h6>
                                 </div>
                                 <div class="card-body">
-									<p><b>Identificador del CU:</b> CU11  </p>
-
-									<p><b>Nombre:</b> Modificar canciones.  </p>
-
-									<p><b>Descripción: </b>Permite modificar el nombre de una canción si este está mal escrito. </p>
-
-									<p><b>Actores: </b> Estación de radio.  </p>
-
-									<p><b>Precondición:</b> El conductor de radio sube información a algún álbum sobre una canción con el nombre mal escrito.  </p>
-
-									<p><b>Postcondición:</b> La estación de radio podrá editar la información de la canción con el nombre mal escrito. </p>
-
-									<p><b>Entradas:</b> Nombre del álbum de la banda o artista.  </p>
-
-									<p><b>Salidas:</b> Devuelve el álbum con el nombre de la canción modificada. </p>
-
-									<p><b>Trayectoria principal:  </b> </p>
-									<ol>
-										<li>La estación de radio inicia sesión a través del CU07.  </li>
-										<li>La estación de radio revisa los álbumes a los que el Conductor de Radio agrego canciones recientemente y encuentra una(s) canción(es) con el nombre mal escrito. </li>
-										<li>La estación de radio realiza la modificación en el nombre de dicha(s) canción(es) a travez de la UI11 que muestra los campos para modificar el nombre de la(s) cancion(es) y guardar los cambios. </li>
-										<li>El caso de uso termina. </li>
-
-									</ol>
-
+                                     <div class="text-center"><img  class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="img/DiagramaDespliegue2.png"></div>
+                                     <br/>
+                                     <div class="text-center"><img  class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="img/DiagramaDespliegue2.jpeg"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-       
+                    <!-- Content Row -->
+            
             <!-- End of Main Content -->
-        </div>
-            <!-- Footer -->
+
+                    <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -253,17 +228,14 @@
             </footer>
             <!-- End of Footer -->
 
-
-        <!-- End of Content Wrapper -->
-
+        </div>
     </div>
-    <!-- End of Page Wrapper -->
+            <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -274,10 +246,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
 </body>
 
 </html>
